@@ -14,8 +14,13 @@ public class DockerSpringbootApplication {
 	}
 
 
-	@RequestMapping
+	@RequestMapping("/hello")
 	public String  hello(){
 		return "hello docker springboot";
+	}
+
+	@RequestMapping("/test")
+	public String  test(){
+		return "springboot jenkins  git test";
 	}
 }
